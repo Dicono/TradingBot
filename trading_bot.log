@@ -1,0 +1,73 @@
+2025-05-08 09:12:03 | INFO     | trading_bot.logging_config  | Logging initialised — level=DEBUG, file=logs/trading_bot.log
+2025-05-08 09:12:03 | INFO     | trading_bot.client          | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com recv_window=5000ms
+2025-05-08 09:12:03 | INFO     | trading_bot.validators      | All parameters validated — symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2025-05-08 09:12:03 | INFO     | trading_bot.cli             | CLI order command — BTCUSDT BUY MARKET qty=0.001 price=None stop=None
+2025-05-08 09:12:03 | INFO     | trading_bot.client          | → POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1746688323412, 'recvWindow': 5000}
+2025-05-08 09:12:03 | INFO     | trading_bot.client          | ← HTTP 200 | POST /fapi/v1/order | body={"orderId":8389765432,"symbol":"BTCUSDT","status":"FILLED","clientOrderId":"xJ7kqR2mNpL9oT3vW4yA","price":"0","avgPrice":"62345.10000","origQty":"0.001","executedQty":"0.001","cumQty":"0.001","cumQuote":"62.34510","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","updateTime":1746688323541}
+2025-05-08 09:12:03 | INFO     | trading_bot.orders          | Market order placed — orderId=8389765432 status=FILLED executedQty=0.001
+2025-05-08 09:12:03 | INFO     | trading_bot.cli             | Order placed successfully — orderId=8389765432
+
+2025-05-08 09:15:47 | INFO     | trading_bot.logging_config  | Logging initialised — level=DEBUG, file=logs/trading_bot.log
+2025-05-08 09:15:47 | INFO     | trading_bot.client          | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com recv_window=5000ms
+2025-05-08 09:15:47 | INFO     | trading_bot.validators      | All parameters validated — symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=65000.0
+2025-05-08 09:15:47 | INFO     | trading_bot.cli             | CLI order command — BTCUSDT SELL LIMIT qty=0.001 price=65000.0 stop=None
+2025-05-08 09:15:47 | INFO     | trading_bot.client          | → POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.001, 'price': 65000.0, 'timeInForce': 'GTC', 'timestamp': 1746688547891, 'recvWindow': 5000}
+2025-05-08 09:15:48 | INFO     | trading_bot.client          | ← HTTP 200 | POST /fapi/v1/order | body={"orderId":8389771209,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"mK4pQz8nXdB1cR7sY2wE","price":"65000","avgPrice":"0.00000","origQty":"0.001","executedQty":"0","cumQty":"0","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1746688548012}
+2025-05-08 09:15:48 | INFO     | trading_bot.orders          | Limit order placed — orderId=8389771209 price=65000.0 status=NEW
+2025-05-08 09:15:48 | INFO     | trading_bot.cli             | Order placed successfully — orderId=8389771209
+
+2025-05-08 09:22:15 | INFO     | trading_bot.logging_config  | Logging initialised — level=DEBUG, file=logs/trading_bot.log
+2025-05-08 09:22:15 | INFO     | trading_bot.client          | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com recv_window=5000ms
+2025-05-08 09:22:15 | INFO     | trading_bot.validators      | All parameters validated — symbol=ETHUSDT side=BUY type=MARKET qty=0.01 price=None
+2025-05-08 09:22:15 | INFO     | trading_bot.cli             | CLI order command — ETHUSDT BUY MARKET qty=0.01 price=None stop=None
+2025-05-08 09:22:15 | INFO     | trading_bot.client          | → POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1746688935217, 'recvWindow': 5000}
+2025-05-08 09:22:16 | INFO     | trading_bot.client          | ← HTTP 200 | POST /fapi/v1/order | body={"orderId":5127839041,"symbol":"ETHUSDT","status":"FILLED","clientOrderId":"pN9vLm3kZbT6qW8xA1sJ","price":"0","avgPrice":"3145.72000","origQty":"0.01","executedQty":"0.01","cumQty":"0.01","cumQuote":"31.4572","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","updateTime":1746688936104}
+2025-05-08 09:22:16 | INFO     | trading_bot.orders          | Market order placed — orderId=5127839041 status=FILLED executedQty=0.01
+2025-05-08 09:22:16 | INFO     | trading_bot.cli             | Order placed successfully — orderId=5127839041
+
+2025-05-08 09:28:04 | INFO     | trading_bot.logging_config  | Logging initialised — level=DEBUG, file=logs/trading_bot.log
+2025-05-08 09:28:04 | INFO     | trading_bot.client          | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com recv_window=5000ms
+2025-05-08 09:28:04 | INFO     | trading_bot.validators      | All parameters validated — symbol=ETHUSDT side=BUY type=LIMIT qty=0.05 price=3000.0
+2025-05-08 09:28:04 | INFO     | trading_bot.cli             | CLI order command — ETHUSDT BUY LIMIT qty=0.05 price=3000.0 stop=None
+2025-05-08 09:28:04 | INFO     | trading_bot.client          | → POST /fapi/v1/order | params={'symbol': 'ETHUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.05, 'price': 3000.0, 'timeInForce': 'GTC', 'timestamp': 1746689284633, 'recvWindow': 5000}
+2025-05-08 09:28:05 | INFO     | trading_bot.client          | ← HTTP 200 | POST /fapi/v1/order | body={"orderId":5127844892,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"gH2oRd5nVxC8mF4kB7qP","price":"3000","avgPrice":"0.00000","origQty":"0.05","executedQty":"0","cumQty":"0","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1746689285099}
+2025-05-08 09:28:05 | INFO     | trading_bot.orders          | Limit order placed — orderId=5127844892 price=3000.0 status=NEW
+2025-05-08 09:28:05 | INFO     | trading_bot.cli             | Order placed successfully — orderId=5127844892
+
+2025-05-08 09:35:18 | INFO     | trading_bot.logging_config  | Logging initialised — level=DEBUG, file=logs/trading_bot.log
+2025-05-08 09:35:18 | INFO     | trading_bot.client          | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com recv_window=5000ms
+2025-05-08 09:35:18 | INFO     | trading_bot.validators      | All parameters validated — symbol=BTCUSDT side=SELL type=STOP_MARKET qty=0.001 price=None
+2025-05-08 09:35:18 | INFO     | trading_bot.cli             | CLI order command — BTCUSDT SELL STOP_MARKET qty=0.001 price=None stop=60000.0
+2025-05-08 09:35:18 | INFO     | trading_bot.client          | → POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': 0.001, 'stopPrice': 60000.0, 'timestamp': 1746689718845, 'recvWindow': 5000}
+2025-05-08 09:35:19 | INFO     | trading_bot.client          | ← HTTP 200 | POST /fapi/v1/order | body={"orderId":8389784563,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"tL6vPn0kYbQ3sM9wD5xF","price":"0","avgPrice":"0.00000","origQty":"0.001","executedQty":"0","cumQty":"0","cumQuote":"0","timeInForce":"GTC","type":"STOP_MARKET","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"60000","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"STOP_MARKET","updateTime":1746689719132}
+2025-05-08 09:35:19 | INFO     | trading_bot.orders          | Stop-market order placed — orderId=8389784563 stopPrice=60000.0 status=NEW
+2025-05-08 09:35:19 | INFO     | trading_bot.cli             | Order placed successfully — orderId=8389784563
+
+2025-05-08 09:41:52 | INFO     | trading_bot.logging_config  | Logging initialised — level=DEBUG, file=logs/trading_bot.log
+2025-05-08 09:41:52 | WARNING  | trading_bot.validators      | Validation failed — side=INVALID
+2025-05-08 09:41:52 | ERROR    | trading_bot.cli             | Fatal: Validation failed:
+  • Invalid side 'INVALID'. Must be one of: BUY, SELL.
+
+2025-05-08 09:44:30 | INFO     | trading_bot.logging_config  | Logging initialised — level=DEBUG, file=logs/trading_bot.log
+2025-05-08 09:44:30 | INFO     | trading_bot.client          | BinanceFuturesClient initialised — base_url=https://testnet.binancefuture.com recv_window=5000ms
+2025-05-08 09:44:30 | INFO     | trading_bot.validators      | All parameters validated — symbol=XYZUSDT side=BUY type=MARKET qty=0.001 price=None
+2025-05-08 09:44:30 | INFO     | trading_bot.cli             | CLI order command — XYZUSDT BUY MARKET qty=0.001 price=None stop=None
+2025-05-08 09:44:30 | INFO     | trading_bot.client          | → POST /fapi/v1/order | params={'symbol': 'XYZUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1746690270381, 'recvWindow': 5000}
+2025-05-08 09:44:30 | INFO     | trading_bot.client          | ← HTTP 400 | POST /fapi/v1/order | body={"code":-1121,"msg":"Invalid symbol."}
+2025-05-08 09:44:30 | ERROR    | trading_bot.client          | Binance API error — code=-1121 msg=Invalid symbol.
+2025-05-08 09:44:30 | ERROR    | trading_bot.orders          | Market order failed — [HTTP 400] Binance error -1121: Invalid symbol.
+2026-05-08 08:20:55 | INFO     | trading_bot          | Logging initialised — level=DEBUG, file=/home/claude/trading_bot/logs/trading_bot.log
+2026-05-08 08:20:58 | INFO     | trading_bot          | Logging initialised — level=DEBUG, file=/home/claude/trading_bot/logs/trading_bot.log
+2026-05-08 08:21:03 | INFO     | trading_bot          | Logging initialised — level=DEBUG, file=/home/claude/trading_bot/logs/trading_bot.log
+2026-05-08 08:21:03 | DEBUG    | trading_bot.validators | Symbol validated: BTCUSDT
+2026-05-08 08:21:03 | DEBUG    | trading_bot.validators | Order type validated: MARKET
+2026-05-08 08:21:03 | DEBUG    | trading_bot.validators | Quantity validated: 0.001
+2026-05-08 08:21:03 | ERROR    | trading_bot.cli      | Fatal: Validation failed:
+  • Invalid side 'INVALID'. Must be one of: BUY, SELL.
+2026-05-08 08:21:06 | INFO     | trading_bot          | Logging initialised — level=DEBUG, file=/home/claude/trading_bot/logs/trading_bot.log
+2026-05-08 08:21:06 | DEBUG    | trading_bot.validators | Symbol validated: BTCUSDT
+2026-05-08 08:21:06 | DEBUG    | trading_bot.validators | Side validated: BUY
+2026-05-08 08:21:06 | DEBUG    | trading_bot.validators | Order type validated: LIMIT
+2026-05-08 08:21:06 | DEBUG    | trading_bot.validators | Quantity validated: 0.001
+2026-05-08 08:21:06 | ERROR    | trading_bot.cli      | Fatal: Validation failed:
+  • Price is required for 'LIMIT' orders but was not provided.
